@@ -8,7 +8,7 @@ body{background:var(--paper)}
 .logo{width:58px;height:58px;object-fit:contain;display:block}
 .brand-name{font-size:11px;line-height:1.25;letter-spacing:2.5px;font-weight:600}
 .brand-name span{font-size:9px;letter-spacing:3.2px;font-weight:500}
-.hero{position:relative;z-index:1;max-width:850px;margin:auto 0;padding:10vh 0 9vh;animation:fadeUp 1.1s .15s ease both}
+.hero{position:relative;z-index:1;max-width:850px;margin:auto 0;padding:7vh 0 6vh;animation:fadeUp 1.1s .15s ease both}
 .eyebrow{font-size:10px;letter-spacing:4px;font-weight:600;color:var(--muted);margin-bottom:28px}
 h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(72px,12vw,170px);line-height:.8;letter-spacing:-5px;font-weight:500}
 h1 em{font-weight:500;color:var(--accent)}
@@ -16,9 +16,17 @@ h1 em{font-weight:500;color:var(--accent)}
 .line{width:95px;height:1px;background:var(--ink);margin:36px 0 22px}
 .status{font-size:9px;letter-spacing:3px;font-weight:600;display:flex;align-items:center;gap:10px}
 .status span{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(180,154,104,.13);animation:pulse 2s infinite}
-footer{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #d5d1ca;padding-top:18px;font-size:8px;letter-spacing:2px;color:#888}
-.creator strong{color:var(--ink);font-weight:600}
+footer{position:relative;z-index:1;margin-top:auto;border-top:1px solid #d5d1ca;padding:16px 0 4px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:8px;letter-spacing:2.5px;color:#888}
+.creator{color:#666}.creator strong{color:var(--ink);font-weight:700}
 @keyframes fadeUp{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
 @keyframes fadeDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:none}}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
-@media(max-width:600px){.page{padding:25px 25px}.hero{padding:8vh 0 10vh}h1{font-size:clamp(68px,20vw,110px);letter-spacing:-3px}.intro{margin-top:34px;font-size:14px}.eyebrow{letter-spacing:2.5px}footer{flex-direction:column;align-items:flex-start;line-height:1.5}.creator{font-size:8px}}
+@media(max-width:600px){
+.page{padding:25px 25px 16px}
+.hero{padding:6vh 0 4vh}
+h1{font-size:clamp(68px,20vw,110px);letter-spacing:-3px}
+.intro{margin-top:34px;font-size:14px}
+.eyebrow{letter-spacing:2.5px}
+footer{flex-direction:column;align-items:center;text-align:center;gap:8px;padding:14px 0 0;font-size:8px;letter-spacing:2px}
+.creator{order:1}.copyright{order:2}
+}
